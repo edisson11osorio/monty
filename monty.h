@@ -59,34 +59,34 @@ typedef struct inputdata_s
 	stack_t *stack;
 } inputdata_t;
 
-// /* Global function*/
-// extern inputdata_t data;
+/* Global function*/
+extern inputdata_t data;
 
-// /* push function */
-// void _push(stack_t **head, unsigned int line_number);
-// /* pall function */
-// void _pall(stack_t **head, unsigned int line_number);
-// /* pint function */
-// void _pint(stack_t **head, unsigned int line_number);
-// /* pop function */
-// void _pop(stack_t **head, unsigned int line_number);
-// /* swap function */
-// void _swap(stack_t **head, unsigned int line_number);
-// /* add function */
-// void _add(stack_t **head, unsigned int line_number);
-// /* nop function */
-// void _nop(stack_t **head, unsigned int line_number);
-// /* nop function */
-// void _sub(stack_t **head, unsigned int line_number);
-// /* nop function */
-// void _div(stack_t **head, unsigned int line_number);
-// /* nop function */
-// void _mul(stack_t **head, unsigned int line_number);
+/* push function */
+void _push(stack_t **head, unsigned int line_number);
+/* pall function */
+void _pall(stack_t **head, unsigned int line_number);
+/* pint function */
+void _pint(stack_t **head, unsigned int line_number);
+/* pop function */
+void _pop(stack_t **head, unsigned int line_number);
+/* swap function */
+void _swap(stack_t **head, unsigned int line_number);
+/* add function */
+void _add(stack_t **head, unsigned int line_number);
+/* nop function */
+void _nop(stack_t **head, unsigned int line_number);
+/* nop function */
+void _sub(stack_t **head, unsigned int line_number);
+/* nop function */
+void _div(stack_t **head, unsigned int line_number);
+/* nop function */
+void _mul(stack_t **head, unsigned int line_number);
 
-// /*number_verifier function*/
-// int number_verifier(char *string);
-// /*free_stack function*/
-// void free_stack(stack_t *head);
-// /*get_functions function*/
-// void (*get_functions())(stack_t **stack, unsigned int line_number);
-// #endif
+/*number_verifier function*/
+int number_verifier(char *string);
+/*free_stack function*/
+void free_stack(stack_t *head);
+/*get_functions function*/
+void (*get_functions())(stack_t **stack, unsigned int line_number);
+#endif
