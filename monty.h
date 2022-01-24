@@ -43,21 +43,21 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-// /**
-//  * struct inputdata_s - Struct to store data
-//  * @op_code: the opcode
-//  * @buffer: Array that stores the line read by getline
-//  * @pointer_to_file: Pointer to file where the opcodes are written
-//  * @stack: Head to the double linked list being used
-//  * Description: Struct to store data
-//  */
-// typedef struct inputdata_s
-// {
-// 	char *op_code;
-// 	char *buffer;
-// 	FILE *pointer_to_file;
-// 	stack_t *stack;
-// } inputdata_t;
+/**
+ * struct inputdata_s - Struct to store data
+ * @op_code: the opcode
+ * @buffer: Array that stores the line read by getline
+ * @pointer_to_file: Pointer to file where the opcodes are written
+ * @stack: Head to the double linked list being used
+ * Description: Struct to store data
+ */
+typedef struct inputdata_s
+{
+	char *op_code;
+	char *buffer;
+	FILE *pointer_to_file;
+	stack_t *stack;
+} inputdata_t;
 
 // /* Global function*/
 // extern inputdata_t data;
