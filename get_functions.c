@@ -11,3 +11,8 @@ void (*get_functions())(stack_t **stack, unsigned int line_number)
 	instruction_t array[] = {
 		{"push", _push},
 		{"pall", _pall},
+		{"pint", _pint},
+		{"pop", _pop},
+		{"swap", _swap},
+		{"add", _add},
+		{"nop", _nop},
