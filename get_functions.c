@@ -16,3 +16,14 @@ void (*get_functions())(stack_t **stack, unsigned int line_number)
 		{"swap", _swap},
 		{"add", _add},
 		{"nop", _nop},
+
+    while (array[i].opcode != NULL)
+	{
+		if (strcmp(array[i].opcode, data.op_code) == 0)
+		{
+			return (array[i].f);
+		}
+		i++;
+	}
+	return (NULL);
+}
