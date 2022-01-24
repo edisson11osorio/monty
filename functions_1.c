@@ -39,3 +39,21 @@ void _push(stack_t **head, unsigned int line_number)
 
 	*head = new_node;
 }
+/**
+ * _pall - Function that prints all the values on the stack,
+ * starting from the top of the stack.
+ * exit: Void.
+ * @head: Head of a double linked list
+ * @line_number: Number of lines executed before an error is printed
+ */
+void _pall(stack_t **head, unsigned int line_number)
+{
+	stack_t *temp = *head;
+
+	while (temp)
+	{
+		fprintf(stdout, "%d\n", temp->n);
+		temp = temp->next;
+	}
+	(void)line_number;
+}
