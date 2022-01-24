@@ -7,17 +7,17 @@
  **/
 int number_verifier(char *string)
 {
-	// if (string == NULL)
-	// {
-	// 	return (0);
-	// }
-	// if (*string == '\0')
-	// {
-	// 	return (1);
-	// }
-	// if ((*string >= '0' && *string <= '9') || *string == '-')
-	// {
-	// 	return (number_verifier(string + 1));
-	// }
-	// return (0);
+	if (string == NULL)
+	{
+		return (0);
+	}
+	if (*string == '\0')
+	{
+		return (1);
+	}
+	if ((*string >= '0' && *string <= '9') || *string == '-')
+	{
+		return (number_verifier(string + 1));
+	}
+	return (0);
 }
